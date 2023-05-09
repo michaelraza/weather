@@ -41,7 +41,7 @@
 					<muleVersion>4.4.0</muleVersion>
 					<username>${username}</username>
 					<password>${password}</password>
-					<applicationName>Start-app</applicationName>
+					<applicationName>Weather-app</applicationName>
 					<environment>Sandbox</environment>
 					<workerType>Micro</workerType>
 					<workers>1</workers>

@@ -25,22 +25,22 @@ pipeline {
 		
 					environment {
 
-ANYPOINT_CREDENTIALS = credentials('anypoint.credential')
+			ANYPOINT_CREDENTIALS = credentials('anypoint.credential')
 
-}
+			}
 
-					steps {
+		steps {
 
-						echo 'Deploying mule project due to the latest code commit…'
-						
-						echo 'Deploying to the configured environment….'
-						
-						bat 'mvn clean deploy -DmuleDeploy -Dusername=${ANYPOINT_CREDENTIALS_USR} -Dpassword=${ANYPOINT_CREDENTIALS_PSW} -DworkerType=Micro -Dworkers=1 -Dregion=us-west-2'
+			echo 'Deploying mule project due to the latest code commit…'
 
-							}
+			echo 'Deploying to the configured environment….'
 
-						}
-
-					}
+			bat 'mvn clean deploy -DmuleDeploy -Dusername=${ANYPOINT_CREDENTIALS_USR} -Dpassword=${ANYPOINT_CREDENTIALS_PSW} -DworkerType=Micro -Dworkers=1'
 
 				}
+
+			}
+
+		}
+
+	}

@@ -41,12 +41,12 @@
 					<muleVersion>4.4.0</muleVersion>
 					<username>${username}</username>
 					<password>${password}</password>
-					<applicationName>Start-app</applicationName>
+					<applicationName>weather-api</applicationName>
 					<environment>Sandbox</environment>
 					<workerType>Micro</workerType>
 					<workers>1</workers>
 					<objectStoreV2>true</objectStoreV2>
-					<region> us-west-2 </region>
+					
 				</cloudHubDeployment>
 				</configuration>
 			</plugin>

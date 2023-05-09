@@ -22,6 +22,12 @@ pipeline {
 						}
 
 		stage('Deploy CloudHub') {
+			
+			environment {
+
+ANYPOINT_CREDENTIALS = credentials('anypoint.credential')
+
+}
 		
 					
 		steps {
@@ -30,7 +36,7 @@ pipeline {
 
 			echo 'Deploying to the configured environment….'
 
-			bat 'mvn clean deploy -DmuleDeploy'
+			bat 'mvn clean deploy -DmuleDeploy -Dusername=${ANYPOINT_CREDENTIALS_USR} -Dpassword=${ANYPOINT_CREDENTIALS_PSW}'
 
 				}
 

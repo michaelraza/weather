@@ -25,6 +25,13 @@
 				<version>3.2.0</version>
 			</plugin>
 			<plugin>
+			    <groupId>org.mule.tools.maven</groupId>
+			    <artifactId>mule-maven-plugin</artifactId>
+			    <version>3.9.0</version> <!-- Mets à jour cette version -->
+			    <extensions>true</extensions>
+			</plugin>
+
+			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
